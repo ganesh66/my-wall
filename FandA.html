@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+        body{
+            margin: 0px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+        }
+        @media screen and (max-width: 560px){
+            html{
+                background-repeat: no-repeat;
+                background-image: url("FandA-mob.jpg");
+                height: 100%; 
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color:#53443f;
+            }
+        }
+        @media screen and (min-width:560px){
+            html{
+                background-image: url("FandA.jpg");
+                background-repeat: no-repeat;
+                height: 100%; 
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;  
+                background-color:#1a5978;                     
+            }
+        }
+        .nav-bar{
+            margin: 20px 0px;
+        }
+        ul{
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            text-align: right;
+        }
+        .nav-bar-head1{
+            flex-basis: 20%;
+            box-sizing: border-box; 
+            padding: 10px 20px;
+        }
+        .nav-bar-head2{
+            flex-basis: 80%;
+            box-sizing: border-box; 
+        }
+        li{
+            display: inline-block;  
+            padding: 10px 10px;  
+        }
+        a:link{
+            color: white;
+            text-decoration: none;
+        }
+        a:visited{
+            color: white;
+            text-decoration: none;
+        }
+        .intro{
+            padding: 30px;
+        }
+        .header{
+            margin:15px 0px;
+            font-size: 40px;
+        }
+        .intro-content{
+            font-size: 30px; 
+        }
+        @media screen and (max-width:560px){
+            .intro-content{
+                font-size: 23px;
+            }
+        }
+        .selected{
+            border-bottom-color: grey;
+            border-bottom-style: solid;
+            border-bottom-width: 10px
+        } 
+        .main-content-container{
+            max-width: 800px;
+            width: 100%;
+            margin-top: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            box-sizing: border-box;
+            background-color: gray;
+            border-radius: 20px;
+            padding: 20px;
+        } 
+        .box-container{
+            padding: 20px 15px
+        } 
+        .flex{
+            display: flex;
+        }
+        .images{
+            flex-basis: 50%;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar" style="display: flex;">
+        <div class="nav-bar-head1"><a href="#"><b>Why batman</b></a></div>
+        <div class="nav-bar-head2">   
+            <ul>
+                <li><a href="origins.html"><b>Origin</b></a></li>
+                <li class="selected"><a href="FandA.html"><b>Family and allies</b></a></li>
+                <li style="margin-right: 10px;"><a href="Joker.html"><b>Joker</b></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="box-container">
+        <div class="main-content-container">
+            <h2>My Family</h2>
+            As a matter of fact writers really messed up with my marriage.In golden age I got married to Selina Kyle (Catwoman) and had a daughter Helena Wayne (Huntress).In some other versions I got married to  Taliah Al Ghul and had a son Damien Wayne-one of my favourite Robins.But finally they all agreed to make a constant version of me in which my son Damien was created from genetic samples of mine and my arch villainess Taliah Al Ghul and gestated in an animal's womb.
+            <div class="flex">
+                <div class="images"><img src="kyle.jpg" alt="catwoman and batman" width="100%"></div>
+                <div class="images"><img src="taliah.jpg" alt="talia and batman" width="100%"></div>
+            </div>
+            <h2>THe Bat-Family</h2>
+            The Batman Family operates like a network of similarly-minded superheroes who operate in and around Gotham, with me as its head. The group usually seen interacting with one another and assisting in each other's cases in their respective series. Although some members occasionally resent my intrusion into their lives, all respect me , rarely challenge me. Most of the members also have a strong rapport with the me due to their long and close relationships over the years, and considers me a close friend as well as ally. It has also been implied through my history that this network serves as a surrogate family for me and keeps me from slipping too far into my ruthless vigilante persona.
+            <img src="batfamily3.jpg" alt="Bat Family" width="100%">
+            <h2>Affiliations</h2>
+            
+        </div>
+    </div>
+</body>
+</html>
