@@ -6,6 +6,7 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
     <style>
         body{
             margin: 0px;
@@ -15,21 +16,23 @@
         @media screen and (max-width: 560px){
             html{
                 background-repeat: no-repeat;
-                background-image: url("bg2-mob.jpg");
+                background-image: url("jokerbg-mob.jpg");
                 height: 100%; 
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
+                background-color:#020403;
             }
         }
         @media screen and (min-width:560px){
             html{
-                background-image: url("bg1.jpg");
+                background-image: url("jokerbg2.jpg");
                 background-repeat: no-repeat;
                 height: 100%; 
                 background-position: center;
                 background-repeat: no-repeat;
-                background-size: cover;                       
+                background-size: cover;  
+                background-color:#020403;                    
             }
         }
         .nav-bar{
@@ -70,7 +73,7 @@
             font-size: 40px;
         }
         .intro-content{
-            font-size: 30px;             
+            font-size: 30px; 
         }
         @media screen and (max-width:560px){
             .intro-content{
@@ -81,23 +84,52 @@
             border-bottom-color: grey;
             border-bottom-style: solid;
             border-bottom-width: 10px
+        } 
+        .main-content-container{
+            max-width: 800px;
+            width: 100%;
+            margin-top: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            box-sizing: border-box;
+            background-color: gray;
+            border-radius: 20px;
+            padding: 20px;
+        } 
+        .box-container{
+            padding: 20px 15px
+        } 
+        .flex{
+            display: flex;
+        }
+        .images{
+            flex-basis: 50%;
+            padding: 5px;
+        }
+        @media screen and (max-width:560px){
+            .intro-content{
+                font-size: 23px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="nav-bar" style="display: flex;">
-        <div class="nav-bar-head1"><a href="#"><b>Why batman</b></a></div>
+        <div class="nav-bar-head1"><a href="index.html"><b>I am Batman</b></a></div>
         <div class="nav-bar-head2">   
             <ul>
                 <li><a href="origins.html"><b>Origin</b></a></li>
                 <li><a href="FandA.html"><b>Family and allies</b></a></li>
-                <li class="selected" style="margin-right: 10px;"><a href="Joker.html"><b>Joker</b></a></li>
+                <li style="margin-right: 10px;" class="selected"><a href="Joker.html"><b>Joker</b></a></li>
             </ul>
         </div>
     </div>
-    <div class="intro">
-        <div class="header">I AM BATMAN</div>
-        <div class="intro-content">Yeah! The header tells much more about me than required.I am Batman! Genius-level intelligence , Master detective , Master escapologist , Peak human physical and mental condition , Master martial artist , Utilize high tech equipment which usually made by myself sometimes my company. Yeah! I own a company.That's higly confidential.My alter ego is Bruce Wayne! the owner of Wayne Enterprises. Wanna know more About me go on to check how I became a vigilante in my <a href="#"><b>origins</b></a></div>
+    <div class="box-container">
+        <div class="main-content-container">
+            <h2>My archenemy</h2>
+            Yeah!Joker is my archenemy.Joker is a criminal mastermind , a psychopath with a warped , sadistic sense of humor.Just like me the Joker possess no superhuman abilities, instead uses his expertise in chemical engineering to develop poisonous or lethal concoctions, and thematic weaponry , including razor-tipped playing cards, deadly joy buzzers , and acid-spraying lapel flowers. The Joker sometimes works with other Gotham City supervillains such as the Penguin and Two-Face, and groups like the Injustice Gang and Injustice League, but these relationships often collapse due to his desire for unbridled chaos.Romantic interest for the Joker in his former psychiatrist, Harley Quinn, who becomes his villainous sidekick.He killed Jason Todd and palarized Barabara.
+            <img src="jokerbg.jpg" alt="joker in TDK" width="100%">
+        </div>
     </div>
 </body>
 </html>
